@@ -6,7 +6,7 @@
   ],
   "projects": [
     { "id": 1, "video": "/video/Purple6studio_A.mp4", "title": "Purple6studio", "subTitle": "Motion graphic lead" },
-    { "id": 2, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4", "title": "title 2", "subTitle": "subTitle 2" },
+    { "id": 2, "video": "/video/0919_Purple6studo_kinetic_B.mov", "title": "title 2", "subTitle": "subTitle 2" },
     { "id": 3, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4", "title": "title 3", "subTitle": "subTitle 3" },
     { "id": 4, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4", "title": "title 4", "subTitle": "subTitle 4" },
     { "id": 5, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4", "title": "title 5", "subTitle": "subTitle 5" },
