@@ -5,12 +5,12 @@
     { "id": 2, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4", "title": "title 2" }
   ],
   "projects": [
-    { "id": 1, "video": "/video/Purple6studio_A.mp4", "title": "Purple6studio", "subTitle": "Motion graphic lead" },
-    { "id": 2, "video": "/video/1223_SQUEEZE 30s_1.mp4", "title": "title 2", "subTitle": "subTitle 2" },
-    { "id": 3, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4", "title": "title 3", "subTitle": "subTitle 3" },
-    { "id": 4, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4", "title": "title 4", "subTitle": "subTitle 4" },
-    { "id": 5, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4", "title": "title 5", "subTitle": "subTitle 5" },
-    { "id": 6, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4", "title": "title 6", "subTitle": "subTitle 6" }
+    { "id": 1, "video": "/video/Purple6studio_A.mp4", "title": "", "subTitle": "" },
+    { "id": 2, "video": "/video/1223_SQUEEZE 30s_1.mp4", "title": "", "subTitle": "" },
+    { "id": 3, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4", "title": "", "subTitle": "" },
+    { "id": 4, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4", "title": "", "subTitle": "" },
+    { "id": 5, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4", "title": "", "subTitle": "" },
+    { "id": 6, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4", "title": "", "subTitle": "" }
   ],
   "introduce": "수정해보자 얍얍얍 I am a passionate video director with over 10 years of experience in creating compelling visual narratives. My work spans from short films and commercials to documentaries, always pushing boundaries to tell stories in new and exciting ways. Let’s create something amazing together!",
   "contributions" : [
