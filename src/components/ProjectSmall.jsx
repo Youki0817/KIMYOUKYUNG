@@ -88,7 +88,7 @@ const ProjectSmall = ({ project }) => {
                 loop muted playsInline
                 className={`w-full h-full object-cover`}
             >
-                <source src={project.video} type="video/mp4" />
+                <source src={project.video} />
             </motion.video>
         </div>
     );
