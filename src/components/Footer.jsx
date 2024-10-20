@@ -4,15 +4,15 @@ const Footer = ({ introduce, contributions }) => {
             className="min-h-screen flex flex-col bg-[#FF6C6C] text-white p-8 justify-between"
             id="contact"
         >
-            <div className="mx-8 grid grid-cols-1 lg:grid-cols-2">
+            <div className="mx-8 grid grid-cols-1 lg:grid-cols-2 mt-16">
                 <div className="mb-8 mr-16">
-                    <h2 className="text-3xl font-bold mb-4">About Me</h2>
-                    <p className="text-lg leading-relaxed max-w-2xl">
+                    <h2 className="text-3xl font-bold mb-4 font-[BIGJOHN]">About Me</h2>
+                    <p className="text-lg leading-relaxed max-w-2xl font-[SHARP]">
                         {introduce}
                     </p>
                 </div>
                 <div className="mb-8">
-                    <h2 className="text-3xl font-bold mb-4">
+                    <h2 className="text-3xl font-bold mb-4 font-[BIGJOHN]">
                         Projects & Contributions
                     </h2>
                     <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 list-none">
@@ -24,10 +24,10 @@ const Footer = ({ introduce, contributions }) => {
                                 }`}
                             >
                                 <div>
-                                    <span className="text-2xl">
+                                    <span className="text-2xl font-[BIGJOHN]">
                                         {con.title}
                                     </span>
-                                    <p className="mt-3">{con.description}</p>
+                                    <p className="mt-3 font-[SHARP]">{con.description}</p>
                                 </div>
                             </li>
                         ))}
@@ -35,7 +35,7 @@ const Footer = ({ introduce, contributions }) => {
                 </div>
             </div>
             <div className="flex flex-col items-center">
-                <h2 className="text-2xl font-bold">CONTACT</h2>
+                <h2 className="text-2xl font-bold font-[BIGJOHN]">CONTACT</h2>
                 <div className="flex space-x-4 mt-2 mb-8">
                     <a
                         href="mailto:youkyung.kim@themill.com"

@@ -55,9 +55,9 @@ function App() {
               ))}
             </Swiper>
           </section>
-          <section className="bg-[#FF6C6C] h-24">
+          <section className="bg-[#FF6C6C] h-20 flex flex-col items-center">
             <motion.h2
-              className="text-4xl text-white text-center pt-6"
+              className="text-4xl text-white text-center font-[BOLD] tracking-widest whitespace-nowrap inline-block my-auto"
               initial={{ x: '+100vw' }}
               animate={{ x: '-100vw' }}
               transition={{ stiffness: 120, repeat: Infinity, duration: 20 }}

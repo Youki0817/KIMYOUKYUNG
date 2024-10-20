@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'BIGJOHN';
+    src: url("/src/assets/BIGJOHN.otf");
+}
+@font-face {
+    font-family: 'SLIMJOE';
+    src: url("/src/assets/SlimJoe.otf");
+}
+@font-face {
+    font-family: 'SHARP';
+    src: url("/src/assets/SharpSansNo1.otf");
+}
+@font-face {
+    font-family: 'BOLD';
+    src: url("/src/assets/SharpSansNo1_Bold.otf");
+}

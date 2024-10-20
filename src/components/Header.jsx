@@ -19,7 +19,7 @@ const Header = () => {
             <button onClick={() => scrollToTop()}>
                 <img src={logo} alt="logo" className="h-6" />
             </button>
-            <div className='text-white'>
+            <div className='text-white font-[BIGJOHN]'>
                 <a href="#projects" className="mr-4">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
