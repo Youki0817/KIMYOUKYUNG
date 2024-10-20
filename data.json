@@ -1,6 +1,6 @@
 {
   "__주의사항__": "동영상 파일은 총 1,000MB 이내여야 하고, 각 동영상은 25MB 이내로만 업로드 할 것!",
-  "mainColor" : "#FF6C6C",
+  "mainColor" : "#FF5C5C",
   "coreProjects": [
     { "id": 1, "video": "/video/HERITAGE_60s_2997_UHD.mov", "title": "" },
     { "id": 2, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4", "title": "title 2" }
