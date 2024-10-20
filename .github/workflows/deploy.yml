@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: ['react']
+    branches: ['main']
 
   workflow_dispatch:
 
