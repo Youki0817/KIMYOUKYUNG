@@ -5,14 +5,14 @@
     { "id": 2, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4", "title": "title 2" }
   ],
   "projects": [
-    { "id": 1, "video": "/video/Purple6studio_A.mp4", "title": "왕자의 게임", "subTitle": "용용요 1" },
+    { "id": 1, "video": "/video/Purple6studio_A.mp4", "title": "Purple6studio", "subTitle": "Motion graphic lead" },
     { "id": 2, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4", "title": "title 2", "subTitle": "subTitle 2" },
     { "id": 3, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4", "title": "title 3", "subTitle": "subTitle 3" },
     { "id": 4, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4", "title": "title 4", "subTitle": "subTitle 4" },
     { "id": 5, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4", "title": "title 5", "subTitle": "subTitle 5" },
     { "id": 6, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4", "title": "title 6", "subTitle": "subTitle 6" }
   ],
-  "introduce": "I am a passionate video director with over 10 years of experience in creating compelling visual narratives. My work spans from short films and commercials to documentaries, always pushing boundaries to tell stories in new and exciting ways. Let’s create something amazing together!",
+  "introduce": "수정해보자 얍얍얍 I am a passionate video director with over 10 years of experience in creating compelling visual narratives. My work spans from short films and commercials to documentaries, always pushing boundaries to tell stories in new and exciting ways. Let’s create something amazing together!",
   "contributions" : [
     { "id" : 1, "title" : "Project 1", "description": "Led the direction and visual concept, resulting in a 20% increase in audience engagement."},
     { "id" : 2, "title" : "Project 2", "description": "Managed post-production, ensuring seamless transitions and high-quality sound design."},
