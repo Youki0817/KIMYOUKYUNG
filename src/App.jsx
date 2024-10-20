@@ -15,6 +15,7 @@ function App() {
   const [coreProjects, setCoreProjects] = useState([]);
   const [projects, setProjects] = useState([]);
   const [introduce, setIntroduce] = useState("");
+  const [mainColor, setMainColor] = useState("");
   const [contributions, setContributions] = useState([]);
 
   useEffect(() => {
@@ -25,9 +26,10 @@ function App() {
       setCoreProjects(data.coreProjects);
       setProjects(data.projects);
       setIndexedProject(data.coreProjects[0]); // 첫 번째 프로젝트로 초기화
-      setIsLoading(false); // 데이터 로딩이 완료되면 로딩 해제
       setIntroduce(data.introduce);
       setContributions(data.contributions);
+      setMainColor(data.mainColor);
+      setIsLoading(false); // 데이터 로딩이 완료되면 로딩 해제
     };
     
     fetchProjects();
@@ -55,7 +57,7 @@ function App() {
               ))}
             </Swiper>
           </section>
-          <section className="bg-[#FF6C6C] h-20 flex flex-col items-center">
+          <section className={`bg-[${mainColor}] h-20 flex flex-col items-center`}>
             <motion.h2
               className="text-4xl text-white text-center font-[BOLD] tracking-widest whitespace-nowrap inline-block my-auto"
               initial={{ x: '+100vw' }}
@@ -70,7 +72,7 @@ function App() {
           </section>
         </main>
       </div>
-      <Footer introduce={introduce} contributions={contributions} />
+      <Footer introduce={introduce} contributions={contributions} mainColor={mainColor}/>
     </div>
   );
 }

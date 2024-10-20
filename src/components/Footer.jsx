@@ -1,7 +1,7 @@
-const Footer = ({ introduce, contributions }) => {
+const Footer = ({ introduce, contributions, mainColor }) => {
     return (
         <footer
-            className="min-h-screen flex flex-col bg-[#FF6C6C] text-white p-8 justify-between"
+            className={`min-h-screen flex flex-col bg-[${mainColor}] text-white p-8 justify-between`}
             id="contact"
         >
             <div className="mx-8 grid grid-cols-1 lg:grid-cols-2 mt-16">
