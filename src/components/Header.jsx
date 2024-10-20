@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import logo from '../assets/Logo_500.png';
+import logo from '../assets/Logo_500_white.png';
 
 const Header = () => {
     const scrollToTop=()=>{
@@ -19,7 +19,7 @@ const Header = () => {
             <button onClick={() => scrollToTop()}>
                 <img src={logo} alt="logo" className="h-6" />
             </button>
-            <div>
+            <div className='text-white'>
                 <a href="#projects" className="mr-4">Projects</a>
                 <a href="#contact">Contact</a>
             </div>

@@ -1,7 +1,7 @@
 const Footer = ({ introduce, contributions }) => {
     return (
         <footer
-            className="min-h-screen flex flex-col bg-gray-800 text-white p-8 justify-between"
+            className="min-h-screen flex flex-col bg-[#FF6C6C] text-white p-8 justify-between"
             id="contact"
         >
             <div className="mx-8 grid grid-cols-1 lg:grid-cols-2">
@@ -38,15 +38,15 @@ const Footer = ({ introduce, contributions }) => {
                 <h2 className="text-2xl font-bold">CONTACT</h2>
                 <div className="flex space-x-4 mt-2 mb-8">
                     <a
-                        href="https://github.com/your-profile"
+                        href="mailto:youkyung.kim@themill.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-gray-400"
                     >
-                        GitHub
+                        Email
                     </a>
                     <a
-                        href="https://linkedin.com/in/your-profile"
+                        href="https://linkedin.com/in/youkikim"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-gray-400"
@@ -54,7 +54,7 @@ const Footer = ({ introduce, contributions }) => {
                         LinkedIn
                     </a>
                     <a
-                        href="https://instagram.com/your-profile"
+                        href="https://instagram.com/youki__kim"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-gray-400"
@@ -62,7 +62,7 @@ const Footer = ({ introduce, contributions }) => {
                         Instagram
                     </a>
                 </div>
-                <p>&copy; 2024 Your Name</p>
+                <p>&copy; 2024 YouKyung KIM</p>
             </div>
         </footer>
     );

@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjectGallery from "./components/ProjectGallery";
 import { useEffect, useState } from "react";
+import { motion } from 'framer-motion';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -53,6 +54,16 @@ function App() {
                 </SwiperSlide>
               ))}
             </Swiper>
+          </section>
+          <section className="bg-[#FF6C6C] h-24">
+            <motion.h2
+              className="text-4xl text-white text-center pt-6"
+              initial={{ x: '+100vw' }}
+              animate={{ x: '-100vw' }}
+              transition={{ stiffness: 120, repeat: Infinity, duration: 20 }}
+            >
+              KIMYOUKYUNG +82.10.8598.1362 김유경 youkyung.kim@themill.com @youki__kim
+            </motion.h2>
           </section>
           <section>
             <ProjectGallery projects={projects} />
