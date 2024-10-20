@@ -1,0 +1,23 @@
+{
+  "__주의사항__": "동영상 파일은 총 1,000MB 이내여야 하고, 각 동영상은 25MB 이내로만 업로드 할 것!",
+  "coreProjects": [
+    { "id": 1, "video": "/video/HERITAGE_60s_2997_UHD.mov", "title": "" },
+    { "id": 2, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4", "title": "title 2" }
+  ],
+  "projects": [
+    { "id": 1, "video": "/video/Purple6studio_A.mp4", "title": "왕자의 게임", "subTitle": "용용요 1" },
+    { "id": 2, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4", "title": "title 2", "subTitle": "subTitle 2" },
+    { "id": 3, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4", "title": "title 3", "subTitle": "subTitle 3" },
+    { "id": 4, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4", "title": "title 4", "subTitle": "subTitle 4" },
+    { "id": 5, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4", "title": "title 5", "subTitle": "subTitle 5" },
+    { "id": 6, "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4", "title": "title 6", "subTitle": "subTitle 6" }
+  ],
+  "introduce": "I am a passionate video director with over 10 years of experience in creating compelling visual narratives. My work spans from short films and commercials to documentaries, always pushing boundaries to tell stories in new and exciting ways. Let’s create something amazing together!",
+  "contributions" : [
+    { "id" : 1, "title" : "Project 1", "description": "Led the direction and visual concept, resulting in a 20% increase in audience engagement."},
+    { "id" : 2, "title" : "Project 2", "description": "Managed post-production, ensuring seamless transitions and high-quality sound design."},
+    { "id" : 3, "title" : "Project 3", "description": "Directed a team of cinematographers, creating stunning visuals that enhanced the narrative."}
+  ]
+}
+
+  
