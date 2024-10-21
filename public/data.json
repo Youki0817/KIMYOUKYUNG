@@ -1,16 +1,12 @@
 {
   "__주의사항__": "동영상 파일은 총 1,000MB 이내여야 하고, 각 동영상은 25MB 이내로만 업로드 할 것!",
   "coreProjects": [
-    { "id": 1, "image": "", "video": "/video/HERITAGE_60s_2997_UHD.mov", "title": "" },
-    { "id": 2, "image": "", "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4", "title": "title 2" }
+    { "id": 1, "image": "/image/", "video": "/video/HERITAGE_60s_2997_UHD.mov", "title": "" },
+    { "id": 2, "image": "/image/", "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4", "title": "title 2" }
   ],
   "projects": [
-    { "id": 1, "image": "", "video": "/video/Purple6studio_A.mp4", "title": "", "subTitle": "" },
-    { "id": 2, "image": "", "video": "/video/1223_SQUEEZE 30s_1.mp4", "title": "", "subTitle": "" },
-    { "id": 3, "image": "", "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4", "title": "", "subTitle": "" },
-    { "id": 4, "image": "", "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4", "title": "", "subTitle": "" },
-    { "id": 5, "image": "", "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4", "title": "", "subTitle": "" },
-    { "id": 6, "image": "", "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4", "title": "", "subTitle": "" }
+    { "id": 1, "image": "/image/c.png", "video": "/video/Purple6studio_A.mp4", "title": "Purple", "subTitle": "6 Studio" },
+    { "id": 2, "image": "/image/g.png", "video": "/video/1223_SQUEEZE 30s_1.mp4", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra" }
   ],
   "introduce": " KIMYOUKYUNG. I'm a 2d lead from The mill Seoul.",
   "contributions" : [

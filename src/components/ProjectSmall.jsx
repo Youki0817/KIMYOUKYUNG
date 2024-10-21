@@ -1,11 +1,18 @@
 import { motion, useAnimationControls } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const ProjectSmall = ({ project }) => {
+const ProjectSmall = ({ project, videoRef }) => {
     const [visibleImages, setVisibleImages] = useState([]);
-    const videoRef = useRef([]);
+    const navigate = useNavigate();
+    const imageControl = useAnimationControls();
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
+        // 모바일 기기 감지
+        const mobileCheck = window.matchMedia("(pointer: coarse)").matches;
+        setIsMobile(mobileCheck);
+
         const observerOptions = {
             threshold: 0.4, // 이미지가 40% 이상 보이면 동작
         };
@@ -36,53 +43,68 @@ const ProjectSmall = ({ project }) => {
         };
     }, []);
 
-    const titleControls = useAnimationControls();
-    const subTitleControls = useAnimationControls();
-    
     const handleMouseEnter = () => {
-        const currentVideo = videoRef.current[project.id];
-        if (currentVideo) {
-            currentVideo.play();  // 특정 videoRef의 play 호출
+        if (!isMobile) {
+            videoRef.current.forEach(v => v.pause());
+            const currentVideo = videoRef.current[project.id];
+            if (currentVideo) {
+                currentVideo.play();  // 특정 videoRef의 play 호출
+                imageControl.start({ opacity: 0 });
+            }
         }
-        titleControls.start({ y: -50 });
-        subTitleControls.start({ y: 0, opacity: 1 })
     };
 
     const handleMouseLeave = () => {
-        const currentVideo = videoRef.current[project.id];
-        if (currentVideo) {
-            currentVideo.pause();  // 특정 videoRef의 pause 호출
-        }
-        titleControls.start({ y: 0 });
-        subTitleControls.start({ y: 100, opacity: 0 })
+        // if (!isMobile) {
+        //     const currentVideo = videoRef.current[project.id];
+        //     if (currentVideo) {
+        //         currentVideo.pause();  // 특정 videoRef의 pause 호출
+        //     }
+        // }
     };
 
+    const handleTouchStart = () => {
+        if (isMobile) {
+            videoRef.current.forEach(v => v.pause());
+            const currentVideo = videoRef.current[project.id];
+            if (currentVideo) {
+                currentVideo.play();  // 모바일 터치 시 비디오 재생
+                imageControl.start({ opacity: 0 });
+            }
+        }
+    };
+
+    // const handleTouchEnd = () => {
+    //     if (isMobile) {
+    //         const currentVideo = videoRef.current[project.id];
+    //         if (currentVideo) {
+    //             currentVideo.pause();  // 터치 끝날 때 비디오 일시정지
+    //         }
+    //     }
+    // };
+
     return (
-        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div 
+            className="cursor-pointer" 
+            onMouseEnter={handleMouseEnter} 
+            onMouseLeave={handleMouseLeave}
+            onTouchStart={handleTouchStart}
+            onClick={() => navigate(`/detail/${project.id}`)}
+        >
+            <motion.img src={project.image} className='absolute w-full h-full object-cover'
+                initial={{ opacity: 1 }}
+                animate={imageControl}
+            />
             <motion.div
-                className='absolute inset-0 bg-black flex items-center justify-center transition duration-300'
+                className='absolute inset-0 bg-black flex items-center justify-center transition duration-300 z-10'
                 initial={{ opacity: 0 }}
                 animate={{
-                    opacity: visibleImages.includes(project.id.toString()) ? 0 : 0.8,
+                    opacity: isMobile || visibleImages.includes(project.id.toString()) ? 0 : 0.5,
                 }}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
+                transition={{ duration: 0.8, ease: 'easeIn' }}
             >
             </motion.div>
-            <motion.div className={`z-10 h-auto absolute top-1/2 w-full text-white text-3xl text-center`}
-                initial={{ y: 0 }}
-                animate={titleControls}
-                transition={{ type: "spring", stiffness: 120 }}
-            >
-                {project.title}
-            </motion.div>
-            <motion.div className={`z-10 h-auto absolute top-1/2 w-full text-white text-2xl text-center`}
-                initial={{ y: 0, opacity: 0 }}
-                animate={subTitleControls}
-                transition={{ type: "spring", stiffness: 120 }}
-            >
-                {project.subTitle}
-            </motion.div>
-            <motion.video 
+            <motion.video
                 ref={(el) => (videoRef.current[project.id] = el)}
                 data-index={project.id}
                 loop muted playsInline
@@ -93,5 +115,5 @@ const ProjectSmall = ({ project }) => {
         </div>
     );
 }
- 
+
 export default ProjectSmall;
