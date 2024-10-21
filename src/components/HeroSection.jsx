@@ -1,21 +1,20 @@
 import { motion, useAnimationControls } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import ProjectVideo from './ProjectVideo';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = ({ project, indexedProject }) => {
     const videoRef = useRef();
 
-    const controls = useAnimationControls();
     useEffect(() => {
-        if (indexedProject.id === project.id) {
-            controls.start({ y: 0 });
+        if (indexedProject.id === project.id) {            
             videoRef.current.play();
         } else {
             videoRef.current.pause();
-            controls.start({ y: -500 });
         }
-    }, [controls, project, indexedProject]);
-    
+    }, [project, indexedProject]);
+
+    const navigate = useNavigate();
     return (
         <motion.div 
             className="h-screen flex items-center justify-center bg-cover bg-center"
@@ -24,14 +23,12 @@ const HeroSection = ({ project, indexedProject }) => {
             transition={{ duration: 1 }}
         >
             <ProjectVideo src={project.video} main={true} videoRef={videoRef} />
-            <motion.h1
-                className="absolute text-white text-6xl font-bold z-10 p-4"
-                initial={{ y: -500 }} 
-                animate={controls}
-                transition={{ type: "spring", stiffness: 120 }}
+            {/* <button 
+                className="absolute bottom-11 bg-main text-white border border-main-light hover:bg-main-dark focus:outline-none font-medium font-[SHARP] rounded-lg text-xs px-5 py-2.5 text-center me-2 mb-2 drop-shadow-lg"
+                onClick={() => navigate(`/detail/${project.id}`)}
             >
-                {project.title}
-            </motion.h1>
+                Details
+            </button> */}
         </motion.div>
     )
 }

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import ProjectGallery from "./ProjectGallery";
 import { useEffect, useRef, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigationType } from "react-router-dom";
 import SlideBar from "./SlideBar";
 
 const Main = ({ data, setIsLoading }) => {
@@ -17,33 +17,31 @@ const Main = ({ data, setIsLoading }) => {
     const location = useLocation(); 
     const projectsRef = useRef(null);
     const contactRef = useRef(null);
-
+    
+    const navigationType = useNavigationType();
     useEffect(() => {
-      // location.state 값이 "contact"이면 Footer 컴포넌트가 있는 곳으로 스크롤 이동
-      if (location.state === "contact" && contactRef.current) {
-        setTimeout(() => {
-          contactRef.current.scrollIntoView({ behavior: "smooth" });
-        }, 100);
-      } else if (location.state === "projects" && projectsRef.current) {
-        setTimeout(() => {
-          projectsRef.current.scrollIntoView({ behavior: "smooth" });
-        }, 100);
-      } else {
-        window.scrollTo({
-          top:0,
-          behavior:"smooth"
-        })
+      if (navigationType === "PUSH") {
+        if (location.state === "contact" && contactRef.current) {
+          setTimeout(() => {
+            contactRef.current.scrollIntoView({ behavior: "smooth" });
+          }, 100);
+        } else if (location.state === "projects" && projectsRef.current) {
+          setTimeout(() => {
+            projectsRef.current.scrollIntoView({ behavior: "smooth" });
+          }, 100);
+        }
+        window.scrollTo({ top: 0, behavior:"smooth" });
       }
     }, [location, projectsRef, contactRef]);
 
     useEffect(() => {
         if(data) {
-            setCoreProjects(data.coreProjects);
-            setProjects(data.projects);
-            setIndexedProject(data.coreProjects[0]); // 첫 번째 프로젝트로 초기화
-            setIntroduce(data.introduce);
-            setContributions(data.contributions);
-            setIsLoading(false);
+          setProjects(data.includeCoreProject ? data.projects : data.projects.slice(data.coreProjectCount));
+          setIntroduce(data.introduce);
+          setContributions(data.contributions);
+          setCoreProjects(data.projects.slice(0, data.coreProjectCount));
+          setIndexedProject(data.projects[0]); // 첫 번째 프로젝트로 초기화
+          setIsLoading(false);
         } else {
             setIsLoading(true);
         }

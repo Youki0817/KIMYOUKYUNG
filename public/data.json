@@ -1,14 +1,18 @@
 {
-  "__주의사항__": "동영상 파일은 총 1,000MB 이내여야 하고, 각 동영상은 25MB 이내로만 업로드 할 것!",
-  "coreProjects": [
-    { "id": 1, "image": "/image/", "video": "/video/HERITAGE_60s_2997_UHD.mov", "title": "" },
-    { "id": 2, "image": "/image/", "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4", "title": "title 2" }
-  ],
+  "__주의사항1__": "동영상 파일은 총 1,000MB 이내여야 하고, 각 동영상은 25MB 이내로만 업로드 할 것!",
+  "__주의사항2__": "projects 중 에서 상단 슬라이드에 표시하고 싶은 프로젝트 개수만큼 `coreProjectCount`에 기재할 것! 나머지 프로젝트들은 아래에 작게 배치됩니다.",
+  "__주의사항3__": "상단 슬라이드에 표시된 프로젝트가 하단에 작게 표시하게 하고 싶으면, `includeCoreProject`를 true로 변경해주세요.",
+  "coreProjectCount" : 2,
+  "includeCoreProject": false,
   "projects": [
-    { "id": 1, "image": "/image/c.png", "video": "/video/Purple6studio_A.mp4", "title": "Purple", "subTitle": "6 Studio" },
-    { "id": 2, "image": "/image/g.png", "video": "/video/1223_SQUEEZE 30s_1.mp4", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra" }
+    { "id": 1, "image": "/image/s.png", "video": "/video/HERITAGE_60s_2997_UHD.mov", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra"  },
+    { "id": 2, "image": "/image/g.png", "video": "/video/1223_SQUEEZE 30s_1.mp4", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra" },
+    { "id": 3, "image": "/image/c.png", "video": "/video/Purple6studio_A.mp4", "title": "Purple", "subTitle": "6 Studio" },
+    { "id": 4, "image": "/image/s.png", "video": "/video/HERITAGE_60s_2997_UHD.mov", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra" },
+    { "id": 5, "image": "/image/g.png", "video": "/video/1223_SQUEEZE 30s_1.mp4", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra" },
+    { "id": 6, "image": "/image/c.png", "video": "/video/Purple6studio_A.mp4", "title": "Purple", "subTitle": "6 Studio" }
   ],
-  "introduce": " KIMYOUKYUNG. I'm a 2d lead from The mill Seoul.",
+  "introduce": "As a 2d lead at The Mill SEOUL, I work on a variety of visual effects and animation projects. Recently, I've been focusing on creating digital artwork and character animations for advertising campaigns, collaborating closely with my team to bring creative ideas to life. I leverage the latest technologies and software to create unique styles while ensuring high-quality results that meet client expectations. Through diverse projects, I'm building my experience and continually striving to evolve with industry trends.",
   "contributions" : [
     { "id" : 1, "title" : "Project 1", "description": "Led the direction and visual concept, resulting in a 20% increase in audience engagement."},
     { "id" : 2, "title" : "Project 2", "description": "Managed post-production, ensuring seamless transitions and high-quality sound design."},

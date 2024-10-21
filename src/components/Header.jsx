@@ -38,11 +38,11 @@ const Header = () => {
             className="fixed top-0 w-full p-4 flex justify-between z-50"
         >
             <button onClick={() => handleNavigation("/", null)}>
-                <img src={logo} alt="logo" className="h-6" />
+                <img src={logo} alt="logo" className="h-6 drop-shadow-lg" />
             </button>
-            <div className='text-white font-[BIGJOHN]'>
-                <button onClick={() => handleNavigation("/", "projects")} className="mr-4">Projects</button>
-                <button onClick={() => handleNavigation("/", "contact")}>Contact</button>
+            <div className='flex text-white font-[BIGJOHN] gap-4'>
+                <button onClick={() => handleNavigation("/", "projects")} className="drop-shadow-lg">Projects</button>
+                <button onClick={() => handleNavigation("/", "contact")} className="drop-shadow-lg">Contact</button>
             </div>
         </motion.nav>
     );
