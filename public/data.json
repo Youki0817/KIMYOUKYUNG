@@ -5,12 +5,13 @@
   "coreProjectCount" : 2,
   "includeCoreProject": false,
   "projects": [
-    { "id": 1, "image": "/image/s.png", "video": "/video/HERITAGE_60s_2997_UHD.mov", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra"  },
-    { "id": 2, "image": "/image/g.png", "video": "/video/1223_SQUEEZE 30s_1.mp4", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra" },
-    { "id": 3, "image": "/image/c.png", "video": "/video/Purple6studio_A.mp4", "title": "Purple", "subTitle": "6 Studio" },
-    { "id": 4, "image": "/image/s.png", "video": "/video/HERITAGE_60s_2997_UHD.mov", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra" },
-    { "id": 5, "image": "/image/g.png", "video": "/video/1223_SQUEEZE 30s_1.mp4", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra" },
-    { "id": 6, "image": "/image/c.png", "video": "/video/Purple6studio_A.mp4", "title": "Purple", "subTitle": "6 Studio" }
+    { "id": 1, "image": "/image/s.png", "video": "/video/HERITAGE_60s_2997_UHD.mov", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra", "description": "If you want to make a line break in the description, use a backslash N. \n like this." },
+    { "id": 2, "image": "/image/g.png", "video": "/video/1223_SQUEEZE 30s_1.mp4", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra", "description": "If you want to make a line break in the description, use a backslash N. \n like this." },
+    
+    { "id": 3, "image": "/image/c.png", "video": "/video/Purple6studio_A.mp4", "title": "Purple", "subTitle": "6 Studio", "description": "If you want to make a line break in the description, use a backslash N. \n like this." },
+    { "id": 4, "image": "/image/s.png", "video": "/video/HERITAGE_60s_2997_UHD.mov", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra", "description": "설명에 만약 줄바꿈을 하고 싶으면 역슬래시 N을 사용하면 된다. \n이렇게 말이야" },
+    { "id": 5, "image": "/image/g.png", "video": "/video/1223_SQUEEZE 30s_1.mp4", "title": "SAMSUNG", "subTitle": "Galaxy S24 Ultra", "description": "설명에 만약 줄바꿈을 하고 싶으면 역슬래시 N을 사용하면 된다. \n이렇게 말이야" },
+    { "id": 6, "image": "/image/c.png", "video": "/video/Purple6studio_A.mp4", "title": "Purple", "subTitle": "6 Studio", "description": "설명에 만약 줄바꿈을 하고 싶으면 역슬래시 N을 사용하면 된다. \n이렇게 말이야" }
   ],
   "introduce": "As a 2d lead at The Mill SEOUL, I work on a variety of visual effects and animation projects. Recently, I've been focusing on creating digital artwork and character animations for advertising campaigns, collaborating closely with my team to bring creative ideas to life. I leverage the latest technologies and software to create unique styles while ensuring high-quality results that meet client expectations. Through diverse projects, I'm building my experience and continually striving to evolve with industry trends.",
   "contributions" : [

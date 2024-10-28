@@ -39,9 +39,9 @@ const Detail = ({ data, setIsLoading }) => {
             </div>
           </div>
           {indexedProject.video && (
-            <div className="mt-20 lg:my-10 lg:mx-28">
+            <div className="mt-20 lg:my-10 lg:mx-12 flex flex-col gap-10">
               <video
-                className="w-full h-full object-cover"
+                className="self-center w-full h-full object-cover max-h-[90vh] lg:rounded-lg lg:shadow-lg"
                 ref={videoRef}
                 loop
                 muted
@@ -50,6 +50,9 @@ const Detail = ({ data, setIsLoading }) => {
               >
                 <source src={indexedProject.video} />
               </video>
+              <p className="font-[SHARP] text-3xl whitespace-pre-line">
+                {indexedProject.description}
+              </p>
             </div>
           )}
         </div>
